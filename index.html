@@ -1,19 +1,308 @@
-<!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<title>My static Space</title>
-		<link rel="stylesheet" href="style.css" />
-	</head>
-	<body>
-		<div class="card">
-			<h1>Welcome to your static Space!</h1>
-			<p>You can modify this app directly by editing <i>index.html</i> in the Files and versions tab.</p>
-			<p>
-				Also don't forget to check the
-				<a href="https://huggingface.co/docs/hub/spaces" target="_blank">Spaces documentation</a>.
-			</p>
-		</div>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ta'nigh Clark — Software Engineer Portfolio</title>
+    <meta name="description" content="Portfolio of Ta'nigh Clark — showcasing AI-powered dashboards, full-stack apps, and creative coding projects that solve real-world problems.">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#111827',
+                        secondary: '#2563EB',
+                        accent: '#F59E0B',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(17, 24, 39, 0.9), rgba(17, 24, 39, 0.9)), 
+                              url('http://static.photos/technology/1200x630/42');
+            background-size: cover;
+            background-position: center;
+        }
+        .skill-chip {
+            @apply px-3 py-1 rounded-full text-sm font-medium bg-gray-100 text-primary;
+        }
+        .project-card {
+            @apply rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300;
+        }
+        .nav-link {
+            @apply px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100 transition-colors;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-primary">
+    <!-- Navigation -->
+    <nav class="bg-white sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold text-primary">Ta'nigh Clark</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="#home" class="nav-link text-secondary">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="#" class="px-4 py-2 bg-secondary text-white rounded-md hover:bg-opacity-90 transition-colors">Resume</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg text-white min-h-screen flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="text-center md:text-left" data-aos="fade-up">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Code that speaks <span class="text-accent">results.</span></h1>
+                <p class="text-xl md:text-2xl mb-10 max-w-3xl">From backend logic to front-end polish, I build software that solves real problems and scales with users.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#projects" class="px-8 py-3 bg-accent text-primary font-bold rounded-md hover:bg-opacity-90 transition-colors">View Projects</a>
+                    <a href="#" class="px-8 py-3 border-2 border-white text-white font-bold rounded-md hover:bg-white hover:text-primary transition-colors">Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">About Me</h2>
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+                <div class="md:w-1/3" data-aos="fade-right">
+                    <img src="http://static.photos/technology/640x360/42" alt="AI and code visualization representing Ta'nigh's technical expertise" class="rounded-lg shadow-lg w-full max-w-md mx-auto">
+                </div>
+                <div class="md:w-2/3" data-aos="fade-left">
+                    <p class="text-lg mb-6">I'm Ta'nigh Clark, a software engineer with both technical depth (Python, React, SQL, AI tools) and applied psychology insight. My approach combines human-centered problem solving with technical excellence, focusing on understanding user frustration and motivation to create truly effective solutions.</p>
+                    <p class="text-lg mb-8">Whether it's building AI-powered dashboards or full-stack applications, I'm passionate about turning complex problems into elegant, reliable software solutions that make a real impact.</p>
+                    
+                    <h3 class="text-xl font-semibold mb-4">Skills</h3>
+                    <div class="mb-6">
+                        <h4 class="font-medium mb-2">Languages</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-chip">Python</span>
+                            <span class="skill-chip">Java</span>
+                            <span class="skill-chip">SQL</span>
+                            <span class="skill-chip">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <h4 class="font-medium mb-2">Frameworks</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-chip">Flask</span>
+                            <span class="skill-chip">React</span>
+                            <span class="skill-chip">Streamlit</span>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <h4 class="font-medium mb-2">Tools</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-chip">Git</span>
+                            <span class="skill-chip">Power BI</span>
+                            <span class="skill-chip">Hugging Face</span>
+                            <span class="skill-chip">VS Code</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Featured Projects</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card bg-white" data-aos="fade-up" data-aos-delay="100">
+                    <img src="http://static.photos/technology/640x360/1" alt="Proactive Risk & Sentiment Dashboard interface" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Proactive Risk & Sentiment Dashboard</h3>
+                            <span class="text-sm bg-gray-100 px-2 py-1 rounded">2025</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Role: Builder | Stack: Python, pandas, Streamlit, NLP</p>
+                        <ul class="list-disc pl-5 space-y-1 mb-4">
+                            <li>Reduced ticket triage time by 35%</li>
+                            <li>Surfaced hidden frustration trends</li>
+                            <li>Generated automated PDF reports for managers</li>
+                        </ul>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-secondary hover:underline flex items-center">
+                                <i data-feather="github" class="mr-1 w-4 h-4"></i> GitHub
+                            </a>
+                            <a href="#" class="text-secondary hover:underline flex items-center">
+                                <i data-feather="external-link" class="mr-1 w-4 h-4"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card bg-white" data-aos="fade-up" data-aos-delay="200">
+                    <img src="http://static.photos/office/640x360/2" alt="Equipment Checkout System interface" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Equipment Checkout System (ECS)</h3>
+                            <span class="text-sm bg-gray-100 px-2 py-1 rounded">2025</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Role: Project Lead | Stack: Flask, React, PostgreSQL</p>
+                        <ul class="list-disc pl-5 space-y-1 mb-4">
+                            <li>Reduced tool checkout time under 2 minutes</li>
+                            <li>Improved accountability with role-based access</li>
+                            <li>Saved $50k+ in lost tools</li>
+                        </ul>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-secondary hover:underline flex items-center">
+                                <i data-feather="github" class="mr-1 w-4 h-4"></i> GitHub
+                            </a>
+                            <a href="#" class="text-secondary hover:underline flex items-center">
+                                <i data-feather="external-link" class="mr-1 w-4 h-4"></i> Live
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card bg-white" data-aos="fade-up" data-aos-delay="300">
+                    <img src="http://static.photos/abstract/640x360/3" alt="AI Story creative portfolio examples" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">AI Story/Creative Portfolio</h3>
+                            <span class="text-sm bg-gray-100 px-2 py-1 rounded">2025</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Role: Developer + Creator | Stack: Hugging Face, Runway, Adobe Premiere</p>
+                        <ul class="list-disc pl-5 space-y-1 mb-4">
+                            <li>Produced short AI-driven narratives</li>
+                            <li>Blended code + creativity</li>
+                            <li>Grew online engagement by 200%</li>
+                        </ul>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-secondary hover:underline flex items-center">
+                                <i data-feather="github" class="mr-1 w-4 h-4"></i> GitHub
+                            </a>
+                            <a href="#" class="text-secondary hover:underline flex items-center">
+                                <i data-feather="youtube" class="mr-1 w-4 h-4"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="px-6 py-3 bg-secondary text-white font-medium rounded-md hover:bg-opacity-90 transition-colors inline-flex items-center">
+                    View All Projects <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Let's Connect</h2>
+            
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2" data-aos="fade-right">
+                    <h3 class="text-xl font-semibold mb-4">Get in Touch</h3>
+                    <p class="mb-6">I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision. Let's solve problems together!</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i data-feather="mail" class="text-secondary mr-3"></i>
+                            <span>contact@tclark.dev</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="font-medium mb-4">Follow Me</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="p-2 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors" aria-label="LinkedIn">
+                                <i data-feather="linkedin" class="text-primary"></i>
+                            </a>
+                            <a href="#" class="p-2 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors" aria-label="GitHub">
+                                <i data-feather="github" class="text-primary"></i>
+                            </a>
+                            <a href="#" class="p-2 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors" aria-label="YouTube">
+                                <i data-feather="youtube" class="text-primary"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2" data-aos="fade-left">
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-sm font-medium mb-1">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-secondary focus:border-transparent" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium mb-1">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-secondary focus:border-transparent" required>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium mb-1">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-secondary focus:border-transparent" required></textarea>
+                        </div>
+                        <button type="submit" class="px-6 py-3 bg-secondary text-white font-medium rounded-md hover:bg-opacity-90 transition-colors">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="mb-4 md:mb-0">© 2025 Ta'nigh Clark | Building solutions that last.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-accent transition-colors" aria-label="LinkedIn">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                    <a href="#" class="hover:text-accent transition-colors" aria-label="GitHub">
+                        <i data-feather="github"></i>
+                    </a>
+                    <a href="#" class="hover:text-accent transition-colors" aria-label="Email">
+                        <i data-feather="mail"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        feather.replace();
+        
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
+            // Implement mobile menu functionality here
+            alert('Mobile menu would open here in a full implementation');
+        });
+    </script>
+</body>
 </html>

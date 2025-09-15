@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ta'nigh Clark — Projects</title>
+    <meta name="description" content="Detailed portfolio projects of Ta'nigh Clark showcasing software engineering and AI solutions.">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <style>
+        .project-hero {
+            background-image: linear-gradient(rgba(17, 24, 39, 0.9), rgba(17, 24, 39, 0.9)), 
+                              url('http://static.photos/technology/1200x630/10');
+            background-size: cover;
+            background-position: center;
+        }
+        .tech-badge {
+            @apply px-3 py-1 rounded-full text-sm font-medium bg-gray-100 text-gray-800;
+        }
+        .feature-card {
+            @apply p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-xl font-bold text-gray-900">Ta'nigh Clark</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="index.html" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100">Home</a>
+                    <a href="index.html#about" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100">About</a>
+                    <a href="#" class="px-3 py-2 rounded-md text-sm font-medium bg-gray-100 text-blue-600">Projects</a>
+                    <a href="resume.html" class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">Resume</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="project-hero text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6" data-aos="fade-up">Project Portfolio</h1>
+                <p class="text-xl max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    Explore my technical solutions that combine engineering excellence with measurable impact.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow" data-aos="fade-up">
+                    <img src="http://static.photos/technology/640x360/1" alt="Proactive Risk Dashboard interface" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Proactive Risk & Sentiment Dashboard</h3>
+                            <span class="text-sm bg-gray-100 px-2 py-1 rounded">2025</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Python, Streamlit, NLP</p>
+                        <p class="text-gray-700 mb-4">AI-powered dashboard that analyzes customer feedback and operational data to identify risks and opportunities.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Streamlit</span>
+                            <span class="tech-badge">NLP</span>
+                            <span class="tech-badge">pandas</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-blue-600 hover:underline flex items-center">
+                                <i data-feather="github" class="mr-1 w-4 h-4"></i> Code
+                            </a>
+                            <a href="#" class="text-blue-600 hover:underline flex items-center">
+                                <i data-feather="external-link" class="mr-1 w-4 h-4"></i> Live
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow" data-aos="fade-up" data-aos-delay="100">
+                    <img src="http://static.photos/office/640x360/2" alt="Equipment Checkout System interface" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Equipment Checkout System</h3>
+                            <span class="text-sm bg-gray-100 px-2 py-1 rounded">2025</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Flask, React, PostgreSQL</p>
+                        <p class="text-gray-700 mb-4">Full-stack system for managing equipment inventory and checkouts with role-based access control.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Flask</span>
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">PostgreSQL</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-blue-600 hover:underline flex items-center">
+                                <i data-feather="github" class="mr-1 w-4 h-4"></i> Code
+                            </a>
+                            <a href="#" class="text-blue-600 hover:underline flex items-center">
+                                <i data-feather="external-link" class="mr-1 w-4 h-4"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow" data-aos="fade-up" data-aos-delay="200">
+                    <img src="http://static.photos/abstract/640x360/3" alt="AI Story Generator interface" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">AI Story Generator</h3>
+                            <span class="text-sm bg-gray-100 px-2 py-1 rounded">2025</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Hugging Face, Runway, Premiere</p>
+                        <p class="text-gray-700 mb-4">Creative AI application that generates interactive narratives blending text, images, and video.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Hugging Face</span>
+                            <span class="tech-badge">RunwayML</span>
+                            <span class="tech-badge">Adobe Premiere</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-blue-600 hover:underline flex items-center">
+                                <i data-feather="github" class="mr-1 w-4 h-4"></i> Code
+                            </a>
+                            <a href="#" class="text-blue-600 hover:underline flex items-center">
+                                <i data-feather="youtube" class="mr-1 w-4 h-4"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow" data-aos="fade-up">
+                    <img src="http://static.photos/technology/640x360/4" alt="Data Visualization Dashboard" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Interactive Data Dashboard</h3>
+                            <span class="text-sm bg-gray-100 px-2 py-1 rounded">2024</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">React, D3.js, Express</p>
+                        <p class="text-gray-700 mb-4">Custom data visualization platform for exploring complex datasets with interactive charts.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">D3.js</span>
+                            <span class="tech-badge">Node.js</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-blue-600 hover:underline flex items-center">
+                                <i data-feather="github" class="mr-1 w-4 h-4"></i> Code
+                            </a>
+                            <a href="#" class="text-blue-600 hover:underline flex items-center">
+                                <i data-feather="external-link" class="mr-1 w-4 h-4"></i> Live
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow" data-aos="fade-up" data-aos-delay="100">
+                    <img src="http://static.photos/technology/640x360/5" alt="E-commerce Recommendation System" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">E-commerce Recommender</h3>
+                            <span class="text-sm bg-gray-100 px-2 py-1 rounded">2024</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Python, Scikit-learn, Flask</p>
+                        <p class="text-gray-700 mb-4">Machine learning system that provides personalized product recommendations based on user behavior.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Scikit-learn</span>
+                            <span class="tech-badge">Flask</span>
+                            <span class="tech-badge">Collaborative Filtering</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-blue-600 hover:underline flex items-center">
+                                <i data-feather="github" class="mr-1 w-4 h-4"></i> Code
+                            </a>
+                            <a href="#" class="text-blue-600 hover:underline flex items-center">
+                                <i data-feather="external-link" class="mr-1 w-4 h-4"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow" data-aos="fade-up" data-aos-delay="200">
+                    <img src="http://static.photos/technology/640x360/6" alt="Mobile App Development" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Fitness Tracking App</h3>
+                            <span class="text-sm bg-gray-100 px-2 py-1 rounded">2023</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">React Native, Firebase</p>
+                        <p class="text-gray-700 mb-4">Cross-platform mobile application for tracking workouts and nutrition with social features.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">React Native</span>
+                            <span class="tech-badge">Firebase</span>
+                            <span class="tech-badge">Redux</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-blue-600 hover:underline flex items-center">
+                                <i data-feather="github" class="mr-1 w-4 h-4"></i> Code
+                            </a>
+                            <a href="#" class="text-blue-600 hover:underline flex items-center">
+                                <i data-feather="external-link" class="mr-1 w-4 h-4"></i> App Store
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Features -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Project Highlights</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="text-blue-600 mb-4">
+                        <i data-feather="bar-chart-2" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Measurable Impact</h3>
+                    <p class="text-gray-700">Every project includes quantifiable outcomes - reduced costs, saved time, or improved engagement metrics.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-blue-600 mb-4">
+                        <i data-feather="cpu" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">AI Integration</h3>
+                    <p class="text-gray-700">Leveraging cutting-edge AI tools like Hugging Face and custom NLP models to solve real problems.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-blue-600 mb-4">
+                        <i data-feather="users" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">User-Centered</h3>
+                    <p class="text-gray-700">Designs that prioritize usability and accessibility, informed by psychological principles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Build Something Amazing?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Let's collaborate on your next project and create solutions that make an impact.</p>
+            <a href="index.html#contact" class="px-8 py-3 bg-blue-600 text-white font-bold rounded-md hover:bg-blue-700 inline-flex items-center">
+                Get in Touch <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="mb-4 md:mb-0">© 2025 Ta'nigh Clark. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-blue-400 transition-colors" aria-label="LinkedIn">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                    <a href="#" class="hover:text-blue-400 transition-colors" aria-label="GitHub">
+                        <i data-feather="github"></i>
+                    </a>
+                    <a href="index.html" class="hover:text-blue-400 transition-colors" aria-label="Home">
+                        <i data-feather="home"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        feather.replace();
+        
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
+            alert('Mobile menu would open here in a full implementation');
+        });
+    </script>
+</body>
+</html>
