@@ -294,16 +294,11 @@
 
                 <div class="md:w-1/2" data-aos="fade-left">
                     <form action="https://formsubmit.co/tanighclark@gmail.com" method="POST" class="space-y-4">
-                        <!-- Redirect users back to YOUR site after submit -->
-                        <input type="hidden" name="_next"
-                            value="https://portfolio-site-eta-puce.vercel.app/thank-you.html">
-                        <!-- Turn off captcha -->
+                        <!-- Hidden fields -->
                         <input type="hidden" name="_captcha" value="false">
-                        <!-- Subject line + table formatting in the email -->
                         <input type="hidden" name="_subject" value="New Contact From Portfolio Website">
-                        <input type="hidden" name="_template" value="table">
-                        <!-- Honeypot (blocks most bots) -->
-                        <input type="text" name="_honey" style="display:none">
+                        <!-- Optional redirect after submit -->
+                        <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
 
                         <div>
                             <label for="name" class="block text-sm font-medium mb-1">Name</label>
@@ -311,28 +306,24 @@
                                 class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-secondary focus:border-transparent"
                                 required>
                         </div>
-
                         <div>
                             <label for="email" class="block text-sm font-medium mb-1">Email</label>
                             <input type="email" id="email" name="email"
                                 class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-secondary focus:border-transparent"
                                 required>
                         </div>
-
                         <div>
                             <label for="message" class="block text-sm font-medium mb-1">Message</label>
                             <textarea id="message" name="message" rows="4"
                                 class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-secondary focus:border-transparent"
                                 required></textarea>
                         </div>
-
                         <button type="submit"
                             class="px-6 py-3 bg-secondary text-white font-medium rounded-md hover:bg-opacity-90 transition-colors">
                             Send Message
                         </button>
                     </form>
                 </div>
-
             </div>
         </div>
     </section>
