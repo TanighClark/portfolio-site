@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ta'nigh Clark — Resume</title>
-    <meta name="description" content="Resume of Ta'nigh Clark — Software Engineer specializing in AI-powered solutions and full-stack development.">
+    <meta name="description"
+        content="Resume of Ta'nigh Clark — Software Engineer specializing in AI-powered solutions and full-stack development.">
     <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/feather-icons"></script>
@@ -13,17 +15,21 @@
         .resume-section {
             @apply mb-8;
         }
+
         .resume-header {
             @apply border-b-2 border-gray-200 pb-4 mb-6;
         }
+
         .timeline-item {
             @apply mb-6 pb-6 border-b border-gray-100 last:border-0 last:mb-0 last:pb-0;
         }
+
         .skill-chip {
             @apply px-3 py-1 rounded-full text-sm font-medium bg-gray-100 text-gray-800;
         }
     </style>
 </head>
+
 <body class="font-sans antialiased text-gray-800 bg-gray-50">
     <!-- Navigation -->
     <nav class="bg-white shadow-sm">
@@ -34,8 +40,10 @@
                 </div>
                 <div class="hidden md:flex items-center space-x-4">
                     <a href="index.html" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100">Home</a>
-                    <a href="index.html#projects" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100">Projects</a>
-                    <a href="#" class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">Download PDF</a>
+                    <a href="projects.html"
+                        class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100">Projects</a>
+                    <a href="Clark.Resume.pdf"
+                        class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">Download PDF</a>
                 </div>
                 <div class="md:hidden flex items-center">
                     <button class="mobile-menu-button">
@@ -46,165 +54,231 @@
         </div>
     </nav>
 
-    <!-- Resume Content -->
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-white shadow-lg my-8 rounded-lg">
-        <!-- Header -->
-        <div class="resume-header text-center">
-            <h1 class="text-3xl font-bold text-gray-900 mb-2">Ta'nigh Clark</h1>
-            <p class="text-lg text-gray-600 mb-4">Software Engineer | AI & Full-Stack Developer</p>
-            <div class="flex justify-center space-x-4">
-                <a href="#" class="text-blue-600 hover:underline flex items-center">
-                    <i data-feather="mail" class="mr-1 w-4 h-4"></i> contact@tclark.dev
-                </a>
-                <a href="#" class="text-blue-600 hover:underline flex items-center">
-                    <i data-feather="linkedin" class="mr-1 w-4 h-4"></i> LinkedIn
-                </a>
-                <a href="#" class="text-blue-600 hover:underline flex items-center">
-                    <i data-feather="github" class="mr-1 w-4 h-4"></i> GitHub
-                </a>
+    <<!-- Resume Content -->
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-white shadow-lg my-8 rounded-lg">
+            <!-- Header -->
+            <div class="resume-header text-center">
+                <h1 class="text-3xl font-bold text-gray-900 mb-2">Ta'nigh Clark</h1>
+                <p class="text-lg text-gray-600 mb-4">Aspiring Software Engineer • Full-Stack & AI-assisted Workflows
+                </p>
+                <div class="flex justify-center flex-wrap gap-4">
+                    <a href="mailto:contact@tanighclark@gmail.com"
+                        class="text-blue-600 hover:underline flex items-center">
+                        <i data-feather="mail" class="mr-1 w-4 h-4"></i> Tanighclark@gmail.com
+                    </a>
+                    <a href="https://linkedin.com/in/tanigh-clark/"
+                        class="text-blue-600 hover:underline flex items-center">
+                        <i data-feather="linkedin" class="mr-1 w-4 h-4"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/TanighClark" target="_blank" rel="noopener"
+                        class="text-blue-600 hover:underline flex items-center">
+                        <i data-feather="github" class="mr-1 w-4 h-4"></i> GitHub
+                    </a>
+                </div>
             </div>
-        </div>
 
-        <!-- Summary -->
-        <div class="resume-section">
-            <h2 class="text-xl font-bold mb-4 text-gray-800 border-b pb-2">Professional Summary</h2>
-            <p class="text-gray-700">
-                Results-driven Software Engineer with expertise in building AI-powered solutions and full-stack applications. 
-                Combines technical skills in Python, React, and machine learning with a human-centered approach to problem-solving. 
-                Proven track record of developing systems that improve efficiency, reduce costs, and enhance user experiences.
-            </p>
-        </div>
+            <!-- Summary -->
+            <div class="resume-section mt-8">
+                <h2 class="text-xl font-bold mb-4 text-gray-800 border-b pb-2">Professional Summary</h2>
+                <p class="text-gray-700">
+                    Project-driven developer building full-stack web apps and exploring AI-assisted workflows.
+                    Comfortable across React/Next.js front-ends and Python/Node back-ends with SQL data layers.
+                    Currently integrating retrieval-augmented generation (RAG) into a novel-writing app.
+                </p>
+            </div>
 
-        <!-- Skills -->
-        <div class="resume-section">
-            <h2 class="text-xl font-bold mb-4 text-gray-800 border-b pb-2">Technical Skills</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div>
-                    <h3 class="font-semibold mb-2">Languages</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-chip">Python</span>
-                        <span class="skill-chip">JavaScript</span>
-                        <span class="skill-chip">Java</span>
-                        <span class="skill-chip">SQL</span>
+            <!-- Skills -->
+            <div class="resume-section">
+                <h2 class="text-xl font-bold mb-4 text-gray-800 border-b pb-2">Technical Skills</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div>
+                        <h3 class="font-semibold mb-2">Languages</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-chip">Python</span>
+                            <span class="skill-chip">JavaScript</span>
+                            <span class="skill-chip">Java</span>
+                            <span class="skill-chip">SQL</span>
+                            <span class="skill-chip">HTML</span>
+                            <span class="skill-chip">CSS</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold mb-2">Frameworks & Libraries</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-chip">React</span>
+                            <span class="skill-chip">Next.js</span>
+                            <span class="skill-chip">Flask</span>
+                            <span class="skill-chip">Streamlit</span>
+                            <span class="skill-chip">Node.js</span>
+                            <span class="skill-chip">Express</span>
+                            <span class="skill-chip">Tailwind CSS</span>
+                            <span class="skill-chip">Prisma</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold mb-2">Tools & Platforms</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-chip">Git/GitHub</span>
+                            <span class="skill-chip">PostgreSQL</span>
+                            <span class="skill-chip">Vercel</span>
+                            <span class="skill-chip">Hugging Face</span>
+                            <span class="skill-chip">Power BI</span>
+                            <span class="skill-chip">VS Code</span>
+                        </div>
+                        <p class="text-sm text-gray-600 mt-2">
+                            Exploring: <span class="italic">RAG (LangChain/LlamaIndex), vector stores (FAISS/pgvector),
+                                evaluation (RAGAS)</span>
+                        </p>
                     </div>
                 </div>
-                <div>
-                    <h3 class="font-semibold mb-2">Frameworks</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-chip">React</span>
-                        <span class="skill-chip">Flask</span>
-                        <span class="skill-chip">Streamlit</span>
-                        <span class="skill-chip">Node.js</span>
+            </div>
+
+            <!-- Projects (bullet-point resume style) -->
+            <div class="resume-section">
+                <h2 class="text-xl font-bold mb-4 text-gray-800 border-b pb-2">Selected Projects</h2>
+
+                <!-- ECS -->
+                <div class="timeline-item">
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-lg font-semibold">Equipment Checkout System</h3>
+                        <span class="text-sm text-gray-500">Flask • React • PostgreSQL</span>
                     </div>
+                    <ul class="list-disc pl-5 space-y-1 text-gray-700 mt-1">
+                        <li>Automated check-in/out with role-based access and real-time availability to reduce losses.
+                        </li>
+                        <li>Designed normalized schema and CRUD APIs; built React UI with clear status states
+                            (available/missing/damaged).</li>
+                        <li>Added reporting views for accountability and trend analysis.</li>
+                        <li>
+                            <a class="text-blue-600 hover:underline" target="_blank" rel="noopener"
+                                href="https://github.com/TanighClark/ECS-Checkout-System">GitHub</a>
+                        </li>
+                    </ul>
                 </div>
-                <div>
-                    <h3 class="font-semibold mb-2">Tools & Technologies</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-chip">Git</span>
-                        <span class="skill-chip">Docker</span>
-                        <span class="skill-chip">Hugging Face</span>
-                        <span class="skill-chip">Power BI</span>
+
+                <!-- SpellingPlay -->
+                <div class="timeline-item mt-5">
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-lg font-semibold">SpellingPlay</h3>
+                        <span class="text-sm text-gray-500">React • Express • Puppeteer • Vercel</span>
                     </div>
+                    <ul class="list-disc pl-5 space-y-1 text-gray-700 mt-1">
+                        <li>Generates printable worksheets and interactive activities from any user word list.</li>
+                        <li>Server renders PDFs with Puppeteer/EJS; deployed front-end on Vercel for instant access.
+                        </li>
+                        <li>Adult-friendly UX for parents/teachers; simple flows for input → activities → print.</li>
+                        <li>
+                            <a class="text-blue-600 hover:underline" target="_blank" rel="noopener"
+                                href="https://spelling-play.vercel.app/">Live</a>
+                            ·
+                            <a class="text-blue-600 hover:underline" target="_blank" rel="noopener"
+                                href="https://github.com/TanighClark/SpellingPlay">GitHub</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Next.js Dashboard -->
+                <div class="timeline-item mt-5">
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-lg font-semibold">Next.js Dashboard</h3>
+                        <span class="text-sm text-gray-500">Next.js • Prisma • PostgreSQL • Tailwind</span>
+                    </div>
+                    <ul class="list-disc pl-5 space-y-1 text-gray-700 mt-1">
+                        <li>Built authenticated dashboard with styled UI components and persistent data via Prisma ORM.
+                        </li>
+                        <li>Structured API routes and protected pages; applied Tailwind for clean, responsive design.
+                        </li>
+                        <li>
+                            <a class="text-blue-600 hover:underline" target="_blank" rel="noopener"
+                                href="https://github.com/TanighClark/nextjs-dashboard">GitHub</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- PremiumAir -->
+                <div class="timeline-item mt-5">
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-lg font-semibold">PremiumAir Website</h3>
+                        <span class="text-sm text-gray-500">HTML • CSS • JavaScript</span>
+                    </div>
+                    <ul class="list-disc pl-5 space-y-1 text-gray-700 mt-1">
+                        <li>Responsive single-site experience highlighting clean layout and product storytelling.</li>
+                        <li>Optimized for quick load and simple navigation across devices.</li>
+                        <li>
+                            <a class="text-blue-600 hover:underline" target="_blank" rel="noopener"
+                                href="https://premium-air.vercel.app/index.html">Live</a>
+                            ·
+                            <a class="text-blue-600 hover:underline" target="_blank" rel="noopener"
+                                href="https://github.com/TanighClark/PremiumAir">GitHub</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Book App (RAG, in progress) -->
+                <div class="timeline-item mt-5">
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-lg font-semibold">Book App (RAG, in progress)</h3>
+                        <span class="text-sm text-gray-500">Next.js • Postgres • OpenAI/Hugging Face</span>
+                    </div>
+                    <ul class="list-disc pl-5 space-y-1 text-gray-700 mt-1">
+                        <li>Designing retrieval-augmented generation to assist research and scene drafting with source
+                            citations.</li>
+                        <li>Planning pgvector/FAISS indexing, chunking strategy, and evaluation with RAGAS.</li>
+                    </ul>
                 </div>
             </div>
-        </div>
 
-        <!-- Experience -->
-        <div class="resume-section">
-            <h2 class="text-xl font-bold mb-4 text-gray-800 border-b pb-2">Professional Experience</h2>
-            
-            <div class="timeline-item">
-                <div class="flex justify-between items-start mb-2">
-                    <h3 class="text-lg font-semibold">Software Engineer</h3>
-                    <span class="text-gray-600">2023 - Present</span>
+            <!-- Education -->
+            <div class="resume-section">
+                <h2 class="text-xl font-bold mb-4 text-gray-800 border-b pb-2">Education</h2>
+                <div class="timeline-item">
+                    <div class="flex justify-between items-start mb-1">
+                        <h3 class="text-lg font-semibold">B.S. in Computer Information Systems (Software Programming)
+                        </h3>
+                    </div>
+                    <p class="text-gray-600">DeVry University • Inducted into the National Society of Leadership and
+                        Success (NSLS)</p>
                 </div>
-                <p class="text-gray-600 italic mb-3">Tech Solutions Inc.</p>
-                <ul class="list-disc pl-5 space-y-1 text-gray-700">
-                    <li>Led development of AI-powered dashboard that reduced operational costs by 30%</li>
-                    <li>Implemented NLP solutions to automate customer feedback analysis</li>
-                    <li>Mentored junior developers in best practices for full-stack development</li>
-                </ul>
             </div>
-            
-            <div class="timeline-item">
-                <div class="flex justify-between items-start mb-2">
-                    <h3 class="text-lg font-semibold">Full-Stack Developer</h3>
-                    <span class="text-gray-600">2021 - 2023</span>
-                </div>
-                <p class="text-gray-600 italic mb-3">Digital Innovations LLC</p>
-                <ul class="list-disc pl-5 space-y-1 text-gray-700">
-                    <li>Developed equipment checkout system that saved $50k+ in lost tools</li>
-                    <li>Created React-based UI components that improved user engagement by 40%</li>
-                    <li>Optimized database queries reducing API response times by 60%</li>
-                </ul>
-            </div>
-        </div>
 
-        <!-- Education -->
-        <div class="resume-section">
-            <h2 class="text-xl font-bold mb-4 text-gray-800 border-b pb-2">Education</h2>
-            <div class="timeline-item">
-                <div class="flex justify-between items-start mb-2">
-                    <h3 class="text-lg font-semibold">B.S. Computer Science</h3>
-                    <span class="text-gray-600">2017 - 2021</span>
-                </div>
-                <p class="text-gray-600 italic">University of Technology</p>
-                <p class="text-gray-700 mt-2">Specialization in Artificial Intelligence | GPA: 3.8/4.0</p>
-            </div>
-        </div>
-
-        <!-- Projects -->
-        <div class="resume-section">
-            <h2 class="text-xl font-bold mb-4 text-gray-800 border-b pb-2">Key Projects</h2>
-            <div class="timeline-item">
-                <h3 class="text-lg font-semibold mb-1">Proactive Risk & Sentiment Dashboard</h3>
-                <ul class="list-disc pl-5 space-y-1 text-gray-700">
-                    <li>Reduced ticket triage time by 35% using NLP techniques</li>
-                    <li>Integrated with multiple data sources to provide real-time insights</li>
-                </ul>
-            </div>
-            <div class="timeline-item">
-                <h3 class="text-lg font-semibold mb-1">AI Story Generator</h3>
-                <ul class="list-disc pl-5 space-y-1 text-gray-700">
-                    <li>Leveraged Hugging Face models to create interactive narratives</li>
-                    <li>Grew online engagement by 200% through creative content</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Download Button -->
-        <div class="text-center mt-12">
-            <a href="#" class="px-6 py-3 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 inline-flex items-center">
-                <i data-feather="download" class="mr-2 w-4 h-4"></i> Download Full Resume (PDF)
-            </a>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-8">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p>© 2025 Ta'nigh Clark. All rights reserved.</p>
-            <div class="flex justify-center space-x-6 mt-4">
-                <a href="#" class="hover:text-blue-400 transition-colors">
-                    <i data-feather="linkedin"></i>
-                </a>
-                <a href="#" class="hover:text-blue-400 transition-colors">
-                    <i data-feather="github"></i>
-                </a>
-                <a href="index.html" class="hover:text-blue-400 transition-colors">
-                    <i data-feather="home"></i>
+            <!-- Download Button -->
+            <div class="text-center mt-12">
+                <a href="Clark.Resume.pdf" download="TaNigh_Clark_Resume.pdf"
+                    class="px-6 py-3 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 inline-flex items-center">
+                    <i data-feather="download" class="mr-2 w-4 h-4"></i> Download Full Resume (PDF)
                 </a>
             </div>
         </div>
-    </footer>
 
-    <script>
-        feather.replace();
-        
-        // Mobile menu toggle
-        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
-            alert('Mobile menu would open here in a full implementation');
-        });
-    </script>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-white py-8">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <p>© 2025 Ta'nigh Clark. All rights reserved.</p>
+                <div class="flex justify-center space-x-6 mt-4">
+                    <a href="https://linkedin.com/in/tanigh-clark/" target="_blank" rel="noopener"
+                        class="hover:text-accent transition-colors" aria-label="LinkedIn">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                    <a href="https://github.com/TanighClark" target="_blank" rel="noopener"
+                        class="hover:text-accent transition-colors" aria-label="GitHub">
+                        <i data-feather="github"></i>
+                    </a>
+                    <a href="index.html" class="hover:text-blue-400 transition-colors">
+                        <i data-feather="home"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            feather.replace();
+
+            // Mobile menu toggle
+            document.querySelector('.mobile-menu-button').addEventListener('click', function () {
+                alert('Mobile menu would open here in a full implementation');
+            });
+        </script>
 </body>
+
 </html>

@@ -1,2 +1,0 @@
-I need the navbar #projects go to the projects page and the button view projects to navigate to the projects page
-I need the resume button on the navbar to navigate to the resume page
